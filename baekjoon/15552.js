@@ -1,7 +1,5 @@
-// 백준 15552문제 테스트
-
 var fs = require('fs');
-var input = fs.readFileSync('example.txt').toString().split("\n");
+var input = fs.readFileSync('/dev/stdin').toString().split("\n");
 let counts = input[0];
 let numbers ="";
 
