@@ -1,12 +1,13 @@
 var fs = require('fs');
-var input = fs.readFileSync('/dev/stdin').toString().split('\n');
+var input = fs.readFileSync('example.txt').toString().split(" ");
 console.log(input)
+const A = Number(input[0])
+console.log(A)
 
-for(var i=0; i<input.length; i++){
-    if((input[i] % 4 === 0 && input[i] % 100 !==0 ) || input[i] % 400 === 0){
-        console.log(1);
-    } else {
-        console.log(0);
-    } 
+if ((A % 4 === 0 && A % 100 !== 0) || A % 400 === 0) {
+  console.log("1");
+} else {
+  console.log("0");
+}
            
-} 
+
