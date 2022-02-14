@@ -1,5 +1,5 @@
 var fs = require('fs');
-var input = fs.readFileSync('example.txt').toString().split(" ");
+var input = fs.readFileSync('/dev/stdin').toString().split(" ");
 console.log(input)
 const A = Number(input[0])
 console.log(A)
