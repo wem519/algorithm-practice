@@ -1,22 +1,20 @@
-// 백준 2753문제 테스트
+// 백준 15552문제 테스트
 
 var fs = require('fs');
 var input = fs.readFileSync('example.txt').toString().split("\n");
 console.log(input)
-
+let counts = input[0];
 let numbers =[];
 
-for ( let i=0; i < input.length; i++) {
+for ( let i=1; i < input.length; i++) {
   if (input[i] !== "") {
     numbers.push(input[i].split(" "));
   }
 }
 console.log(numbers)
 for( let i=0; i <numbers.length; i++) {
-  let A = numbers[i]
-  if ((A % 4 === 0 && A % 100 !== 0) || A % 400 === 0) {
-    console.log("1");
-  } else {
-    console.log("0");
-  }
+  let num1 = Number(numbers[i][0]);
+  let num2 = Number(numbers[i][1]);
+
+  console.log(num1 + num2)
 }
