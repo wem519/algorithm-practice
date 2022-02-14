@@ -1,3 +1,5 @@
+// 백준 2753문제 테스트
+
 var fs = require('fs');
 var input = fs.readFileSync('example.txt').toString().split("\n");
 console.log(input)
