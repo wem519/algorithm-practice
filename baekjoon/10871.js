@@ -10,3 +10,9 @@ for ( let i = 0; i <=num[0]; i++) {
   }
 }
 console.log(small.join(" "))
+
+// 10871문제 테스트 케이스
+
+// case1 
+// 10 5
+// 1 10 4 9 2 3 8 5 7 6
